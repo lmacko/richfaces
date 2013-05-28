@@ -44,14 +44,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- RichFaces BOM Import -->
-            <dependency>
-                <groupId>org.richfaces</groupId>
-                <artifactId>richfaces-bom</artifactId>
-                <version>${version.richfaces}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <dependency>
                 <groupId>org.richfaces</groupId>
                 <artifactId>richfaces-build</artifactId>
@@ -74,13 +66,14 @@
         <dependency>
             <groupId>org.richfaces</groupId>
             <artifactId>richfaces</artifactId>
+            <version>${version.richfaces}</version>
         </dependency>
 
         <dependency>
             <groupId>org.richfaces</groupId>
             <artifactId>richfaces-push-depchain</artifactId>
-            <type>pom</type>
             <version>${version.richfaces}</version>
+            <type>pom</type>
         </dependency>
 
         <dependency>

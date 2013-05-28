@@ -59,16 +59,6 @@
     <dependencyManagement>
         <dependencies>
             <!--
-                Reference usage of RichFaces BOM dependency version management
-            -->
-            <dependency>
-                <groupId>org.richfaces</groupId>
-                <artifactId>richfaces-bom</artifactId>
-                <version>${version.richfaces}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!--
                 Manage example dependency versions for whole RichFaces build
                 (not intented to be used by other projects projects)
              -->
@@ -103,6 +93,7 @@
         <dependency>
             <groupId>org.richfaces</groupId>
             <artifactId>richfaces</artifactId>
+            <version>${version.richfaces}</version>
         </dependency>
 
         <!-- Runtime dependencies -->
